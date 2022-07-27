@@ -1,0 +1,88 @@
+#home-page {
+  font-size: 1.5em;
+}
+
+#home-page a {
+  color: hsla(0, 2%, 21%, 1);
+  text-decoration: underline;
+}
+
+
+/* Part one => Welcome */
+
+#home-page a:hover {
+  font-weight: bold;
+}
+
+#home-part-one {
+  /* min-height: 500px; */
+  min-height: 100vh;
+  height: fit-content;
+  background-color: hsla(187, 48%, 79%, 1);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction {
+  width: 75%;
+  text-align: center;
+  margin: auto;
+}
+
+#home-part-one .button-link {
+  color: white;
+  font-size: 1em;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+
+/* Part two => Green ingredient checker */
+
+#home-part-two {
+  min-height: fit-content;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#light-blue-gradient {
+  min-height: 25%;
+  background-image: linear-gradient(hsla(187, 48%, 79%, 1), white);
+}
+
+#home-part-two .text-ov-img-cont {
+  margin-left: 4em;
+}
+
+.rounded-image {
+  border-radius: 50%;
+  width: 15em;
+  height: 15em;
+  margin: auto;
+}
+
+#green-description {
+  margin: 5em;
+  text-align: center;
+}
+
+#home-part-two a {
+  margin: auto;
+}
+
+
+
+/* Part three => Hire me part */
+
+#home-part-three .portrait {
+  max-height: 400px;
+  min-height: 200px;
+  height: 30em;
+}
+
+#home-part-three .about {
+  width: 50%;
+  /* font-size: 1.5em; */
+}

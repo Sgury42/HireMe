@@ -1,0 +1,116 @@
+#green-part-one {
+  background-image: url("../assets/images/ocean.jpeg");
+  background-size: 100% 100%;
+  height: 100vh;
+  min-height: 700px;
+  display: flex;
+  justify-content: space-around;
+  /* padding-top: 10em; */
+}
+
+#green-part-one .input-container {
+  padding-top: 10em;
+  width: 40%;
+}
+
+.green-form-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  padding: 2em;
+  margin: 2em;
+  border-radius: 30px;
+  height: 50vh;
+  overflow: scroll;
+}
+
+.green-form-cont textarea {
+  width: 100%;
+  /* height: 10em; */
+  border-radius: 10px;
+  border: 1px solid rgb(219, 219, 219);
+  overflow: scroll;
+  font-family: Arial, Helvetica, sans-serif;
+  resize: none;
+}
+
+.green-form-cont .ingredient-txtarea {
+  height: 25vh;
+}
+
+.green-form-cont .allergies-txtarea {
+  height: 15vh;
+}
+
+.green-form-cont button {
+  border: none;
+  border-radius: 10px;
+  background-color: hsla(173, 34%, 62%, 1);
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2em;
+  width: 50%;
+  align-self: center;
+  box-shadow: 0px 0px 15px hsla(0, 0%, 85%, 1);
+}
+.green-form-cont button:hover {
+  box-shadow: 0px 0px 15px hsla(0, 0%, 80%, 1);
+}
+.green-form-cont button:active {
+  box-shadow: 0px 0px 15px hsla(0, 0%, 75%, 1);
+}
+
+/* Result div */
+
+.result-container {
+  width: 40%;
+  padding-top: 10em;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.result-container .result-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  height: 50vh;
+  padding: 2em;
+  margin: 2em;
+  border-radius: 30px;
+  height: fit-content;
+  max-height: 50vh;
+  overflow: scroll;
+}
+
+.result-container .check-icon {
+  fill:hsla(173, 34%, 62%, 1);
+  width: 50%;
+  align-self: center;
+}
+
+.result-container p {
+  align-self: center;
+}
+
+.result-container .button-link {
+  margin: auto;
+  /* align-self: center; */
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: none;
+}
+.result-container .button-link:hover {
+  font-size: 2.1em;
+  text-decoration: underline;
+}
+
+/* part two= more details */
+
+#green-part-two {
+  min-height: 80vh;
+}
