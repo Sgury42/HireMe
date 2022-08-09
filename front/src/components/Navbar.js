@@ -23,8 +23,10 @@ const Navbar = () => {
     <div id='navbar' className={active ? "navbar active" : "navbar"}>
       <h1 className='h1-title header-title'><Link to='/'>Sandra McDaniels</Link></h1>
       <ul className='pages'>
-        <li><Link to="/green">Green?</Link></li>
+        {/* <li><Link to="/green">Green?</Link></li> */}
         <li><Link to="/hireme">Hire me!</Link></li>
+        <li><Link to="/resume">Resume</Link></li>
+        <li><Link to="/projects">Projects</Link></li>
         {/* <li><Link to="/blog">Blog</Link></li> */}
       </ul>
     </div>

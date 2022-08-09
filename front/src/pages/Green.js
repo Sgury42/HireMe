@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ScrollDown } from '../components';
-import CheckCircleSolid from '../assets/icons/check-circle-solid.js';
+import CheckCircleSolid from '../assets/icons/check-circle-solid';
 import '../css/green.css';
 
 const Green = () =>{

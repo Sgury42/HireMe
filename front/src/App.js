@@ -2,31 +2,22 @@
 import './css/main.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar, Footer } from './components/index';
-import { Home, Green, Hireme, Resources, PageNotFound } from './pages/index';
+import { Home, Hireme, Resume, Projects, PageNotFound } from './pages/index';
 
 function App() {
-
-  //test API connection
-  // const [data, setData] = useState(null);
-
-  // useEffect(() => {
-  //   fetch("/api")
-  //     .then((res) => res.json())
-  //     .then((data) => setData(data.message));
-  // }, []);
 
   return (
     <div className="app">
       <Router>
         <Navbar />
         <div className="main">
-        {/* <p>Test API: {!data ? "Loading..." : data}</p> */}
-        {/* <div className="blank-space"></div> */}
         <Routes>
           <Route path='/' exact element={<Home />} />
-          <Route path='/green' exact element={<Green />} />
+          {/* <Route path='/green' exact element={<Green />} /> */}
           <Route path='/hireme' exact element={<Hireme />} />
-          <Route path='/resources' exact element={<Resources />} />
+          <Route path='/resume' exact element={<Resume />} />
+          <Route path='/projects' exact element={<Projects />} />
+          {/* <Route path='/resources' exact element={<Resources />} /> */}
           <Route path='*' element={<PageNotFound />} />
           {/* <Route path='/blog' exact element={<Blog />} /> */}
         </Routes>

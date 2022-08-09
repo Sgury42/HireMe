@@ -47,7 +47,7 @@ Scroll down to discover all the cool features! </p>
               <p>My dream job would be for a company who share the same values about equity and sustainability. And the perfect 
               team would be made of passionate, positive and outgoing people. I am actively looking for my first job, to learn more about my 
               education and past experiences visit&nbsp;
-              <Link to='/hireme' >my resume.</Link></p>
+              <Link to='/resume' >my resume.</Link></p>
               <em>I am looking forwart to meeting you soon!</em>
             </div>
             <img className='portrait' src={portraitPicture} alt='portrait of me' />

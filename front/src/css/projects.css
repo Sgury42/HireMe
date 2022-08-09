@@ -1,0 +1,37 @@
+#projects {
+  height: 90vh;
+  margin-top: 10vh;
+  width: 100%;
+}
+
+.ProjectOverview {
+  width: 100%;
+}
+
+.mockup {
+  height: 30vh;
+  margin: auto;
+  padding:100px;
+}
+
+#project-description {
+  padding: 1em;
+  width: 50%;
+  min-width: 50%;
+}
+
+#projects .material-symbols-rounded {
+  font-size: 5vh;
+}
+
+#projects button:hover {
+  transform: scale(1.1);
+}
+
+#projects .arrow-back {
+  margin-right: auto;
+}
+
+#projects .arrow-forward {
+  margin-left: auto;
+}

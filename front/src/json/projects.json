@@ -1,0 +1,33 @@
+[
+  {
+    "id" : "Camagru",
+    "description": "Camagru was the first ever web project I worked on, it was a school project while I was studying at 42 Paris, I realised this \"instagram like\" website by myself using PHP, Javascript and MySql. If features a screen to take a selfie with a few filters, an user page where you can see all the photos you've published and can choose to share them or keep them private, a feed page where you can see other users photos, like them and leave a comment. Finaly you can choose to receive email notifications when one of you photo receive a new like or comment.",
+    "technos": ["PHP", "Javascript", "MySql"],
+    "mockupURL": null,
+    "githubURL": "https://github.com/Sgury42/Camagru"
+  },
+  {
+    "id" : "Matcha",
+    "description": "Matcha description",
+    "technos": ["Javascript", "React", "Hooks & Redux", "Sockets", "Materia-UI", "Google Geolocation"],
+    "mockupURL": "mockups/MatchaMockup.png",
+    "githubURL": "https://github.com/Sgury42/matcha"
+  },
+  {
+    "id" : "Hypertube",
+    "description": "hypertube description",
+    "technos": ["React", "Bootstrap", "Express", "Google Auth", "MongoDB"],
+    "mockupURL": "mockups/HypertubeMockup.png",
+    "githubURL": "https://github.com/Sgury42/Hypertube"
+  },
+  {
+    "id": "comment",
+    "_comment": {
+      "id" : "",
+      "description": "",
+      "technos": [],
+      "mockupURL": "mockups/",
+      "githubURL": ""
+    }
+  }
+]
