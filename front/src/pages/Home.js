@@ -13,10 +13,9 @@ const Home = () =>{
       <div id='home-part-one'>
         <div className='void'></div>
         <div className='welcome-msg'>
-          <h2 className='h2-title'>WELCOME to my online portfolio</h2>
-          <p className='introduction'>I am Sandra, <span className='underlined-highlight'>full stack web developper</span>, actively looking for my first job!
-This website has been coded using React.js, Express.js, Css, MongoDb along with passion and love. 
-Scroll down to discover all the cool features! </p>
+          <h2 className='h2-title Hi'>Hi! <br></br>I am Sandra,</h2>
+          <p className='introduction'><span className='underlined-highlight'>full stack web developper</span>, actively looking for my first job!
+This website has been coded using React.js, Css, along with passion and love.</p>
         </div>
         {/* create a component for scroll down one widow size, take argument of how it should look like  */}
         {/* <ScrollDown name='learn more' value={window.innerHeight - document.getElementById('navbar').clientHeight}/> */}

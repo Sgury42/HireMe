@@ -30,7 +30,7 @@ const ProjectsPage = () =>{
           <span class="material-symbols-rounded">arrow_back_ios</span>
         </button>
         {Projects[index]["_comment"] ? handleClick('forward') : 
-        <ProjectOverview id={Projects[index]["id"]} description={Projects[index]["description"]} mockupURL={Projects[index]["mockupURL"]}/>
+        <ProjectOverview id={Projects[index]["id"]} description={Projects[index]["description"]} tech={Projects[index]["technos"]} mockupURL={Projects[index]["mockupURL"]} githubURL={Projects[index]["githubURL"]}/>
         }
         <button className='arrow-forward' onClick={(e => handleClick("forward"))}>
           <span class="material-symbols-rounded">arrow_forward_ios</span>

@@ -8,30 +8,134 @@
   width: 100%;
 }
 
-.mockup {
-  height: 30vh;
+/* .link-box {
+  background-color: red;
   margin: auto;
-  padding:100px;
+  display: flex;
+  flex-direction: row;
+} */
+
+.mockup {
+  height: 45vh;
+  min-height: 300px;
 }
 
 #project-description {
+  font-size: 1.1em;
+}
+
+.project-left-part {
+  width: 35%;
   padding: 1em;
-  width: 50%;
-  min-width: 50%;
+  text-align: justify;
+}
+
+.project-right-part {
+  margin: auto;
+  width: 60%;
 }
 
 #projects .material-symbols-rounded {
   font-size: 5vh;
+  padding: 5px;
 }
 
 #projects button:hover {
   transform: scale(1.1);
 }
 
+#projects button:active {
+  transform: scale(0.8);
+}
+
+
 #projects .arrow-back {
   margin-right: auto;
 }
 
+
 #projects .arrow-forward {
   margin-left: auto;
 }
+
+.github-link {
+  margin: auto;
+  padding: 50px;
+  /* width: 50%; */
+  /* background-color: lightgrey; */
+  border-radius: 5%;
+  display: flex;
+}
+
+.github-link p {
+  padding-left: 15px;
+  size: 2em;
+}
+
+#projects .github-icon {
+  height: 50px;
+  /* color: hsla(0, 2%, 21%, 1); */
+  opacity: 85%;
+}
+
+#projects .technos {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+}
+
+/* .tech1 {
+  align-self: flex-start;
+}
+
+.tech2 {
+  align-self: flex-end;
+}
+
+.tech3 {
+  align-self: center;
+} */
+
+/* @keyframes appear {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+} */
+
+.project-right-part p {
+  /* align-self: flex-end; */
+  color: white;
+  border-radius: 30px;
+  height: fit-content;
+  width: fit-content;
+  padding: 3px 10px 3px;
+  /* animation-name: appear;
+  animation-duration: 2s; */
+  /* opacity: 0%; */
+}
+
+/* .project-right-part .tech1 {
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+.project-right-part .tech2 {
+  animation-name: appear;
+  animation-duration: 2s;
+}
+.project-right-part .tech3 {
+  animation-name: appear;
+  animation-duration: 3s;
+}
+.project-right-part .tech4 {
+  animation-name: appear;
+  animation-duration: 4s;
+}
+.project-right-part .tech5 {
+  animation-name: appear;
+  animation-duration: 5s;
+}
+.project-right-part .tech6 {
+  animation-name: appear;
+  animation-duration: 6s;
+  animation-delay: 3s;
+} */
