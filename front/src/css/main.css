@@ -13,6 +13,15 @@ orange:hsla(30, 100%, 58%, 1)
 red: hsla(23, 100%, 43%, 1)
 text: hsla(0, 2%, 21%, 1) */
 
+
+/* NEW COLOR SET
+
+tan: rgb(166,111,81) //too light
+or tan: rgb(150,85,56)
+blush: rgb(239,211,200)
+light blush: rgba(239,211,200, 0.5)
+mauve: rgb(204,169,158) */
+
 .app {
   display: flex;
   flex-direction: column;
@@ -82,8 +91,9 @@ text: hsla(0, 2%, 21%, 1) */
 .inline-flexbox {
   display: flex;
   justify-content: space-around;
-  /* justify-content: center; */
   align-items: center;
+  /* text-align: center; */
+  height: 100%;
 }
 
 .column-flexbox {

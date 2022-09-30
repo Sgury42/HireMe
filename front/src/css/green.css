@@ -46,7 +46,7 @@
 .green-form-cont button {
   border: none;
   border-radius: 10px;
-  background-color: hsla(173, 34%, 62%, 1);
+  background-color: rgb(239,211,200);
   color: white;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2em;
@@ -86,7 +86,7 @@
 }
 
 .result-container .check-icon {
-  fill:hsla(173, 34%, 62%, 1);
+  fill:rgb(239,211,200);
   width: 50%;
   align-self: center;
 }

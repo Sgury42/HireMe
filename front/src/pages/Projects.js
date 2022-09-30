@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../css/projects.css';
 import Projects from '../json/projects.json';
-// import mockup from '../assets/images/mockups/MatchaMockup.png';
 import { ProjectOverview } from '../components/index.js';
 
 const ProjectsPage = () =>{

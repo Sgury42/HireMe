@@ -32,6 +32,7 @@
 
 .navbar h1 a {
   color: hsla(179, 85%, 21%, 1);
+  /* color: rgb(205,158,116); */
 }
 
 .navbar li :hover {

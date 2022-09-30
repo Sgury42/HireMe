@@ -19,6 +19,7 @@
   min-height: 100vh;
   height: fit-content;
   background-color: hsla(187, 48%, 79%, 1);
+  /* background-color: rgb(225,197,172); */
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -45,11 +46,9 @@
   height: 90vh;
   display: flex;
   flex-direction: column;
-}
-
-#light-blue-gradient {
-  min-height: 25%;
-  background-image: linear-gradient(hsla(187, 48%, 79%, 1), whitesmoke);
+  background: linear-gradient(180deg, hsla(187, 48%, 79%, 1) 0%, whitesmoke 25%);
+  /* background: linear-gradient(180deg, rgb(225,197,172) 0%, whitesmoke 25%); */
+  /* overflow-y: scroll; */
 }
 
 #home-part-two .text-ov-img-cont {
@@ -72,17 +71,53 @@
   margin: auto;
 }
 
+#home-part-timeline {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+  /* overflow-y: scroll; */
+  /* min-width: 1400px; */
+}
 
 
-/* Part three => Hire me part */
 
-#home-part-three .portrait {
+/* Hire me part */
+
+#home-part-hireme .portrait {
   max-height: 400px;
   min-height: 200px;
   height: 30em;
 }
 
-#home-part-three .about {
+#home-part-hireme .about {
+  display: flex;
+  flex-direction: column;
   width: 50%;
-  /* font-size: 1.5em; */
+  max-height: 400px;
+  min-height: 200px;
+  height: 30em;
+
 }
+
+#home-part-hireme .about .contact-buttons {
+  margin: auto auto 0;
+}
+
+.border-buttons {
+  font-size: large;
+  margin: 25px;
+  padding: 10px;
+  border: solid 1px hsla(180, 75%, 22%, 1);
+}
+
+.border-buttons:hover {
+  color: white;
+  background-color: hsla(180, 75%, 22%, 1);
+}
+
+/* .hireme-button {
+}
+
+.resume-button {
+} */

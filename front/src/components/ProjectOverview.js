@@ -10,20 +10,27 @@ const ProjectOverview = (props) => { //id, description, tech, mockupURL, githubU
   //   opacity: '50%',
   // };
 
-  console.log(props)
-
   const colors = ['#6ea0a1', '#3d8181', '#257172', '#0c5758', '#0a4e4e', '#094445'];
+
+  const openInNewTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
 
   return (
     <div id="ProjectOverview" className='inline-flexbox'>
       <div className='column-flexbox project-left-part'>
-        <div id='project-description' className='half-screen'>{props.description}</div>
-        {/* <div class='link-box'> */}
-          <a href={props.githubURL} target='_blank' rel='noopener noreferrer' className='github-link'>
-            <img className='github-icon' src='/assets/GitHub-Mark-120px-plus.png' alt='See Github repostory'/>
+        <div id='project-description' className='half-screen'>
+        <div className='project-details'>
+          <tt><p><b><u>Type:</u></b> {props.description.type}</p>
+          <p><b><u>Team size:</u></b> {props.description.teamSize}</p>
+          <p><b><u>Duration:</u></b> {props.description.duration}</p></tt>
+        </div>
+        <p>{props.description.descriptionPartOne}<b>{props.description.descriptionHighlight}</b>{props.description.descriptionPartTwo}</p>
+        </div>
+          <button className='github-link' onClick={()=>openInNewTab(props.githubURL)} >
+            <img className='github-icon' src='/assets/GitHub-Mark-120px-plus.png' alt='visit github page'/>
             <p>VISIT GITHUB PAGE</p>
-          </a>
-        {/* </div> */}
+          </button>
       </div>
       <div className='project-right-part'>
         <div className='technos'>
@@ -31,7 +38,7 @@ const ProjectOverview = (props) => { //id, description, tech, mockupURL, githubU
           <p className='tech2' style={{backgroundColor: colors[Math.floor(Math.random() * 6)]}}>{props.tech[1]}</p>
           <p className='tech3' style={{backgroundColor: colors[Math.floor(Math.random() * 6)]}}>{props.tech[2]}</p>
         </div>
-        {props.mockups === 0 ? "image coming soon" :
+        {props.mockups === null ? "image coming soon" :
         <img className='mockup' src={props.mockupURL} alt='project mockup' /> 
         }
         <div className='technos'>

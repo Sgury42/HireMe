@@ -1,12 +1,36 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { ScrollDown } from '../components/index.js';
 import '../css/home.css';
 import '../css/main.css';
-import { Link } from 'react-router-dom';
-import oceanPicture from '../assets/images/ocean.jpeg';
+import '../css/projects.css';
+// import { Link } from 'react-router-dom';
+import Projects from '../json/projects.json';
+import { ProjectOverview, Timeline } from '../components/index.js';
+// import oceanPicture from '../assets/images/ocean.jpeg';
 import portraitPicture from '../assets/images/portrait-2.jpg';
 
+
+
 const Home = () =>{
+
+  //project section
+  const [index, setIndex] = useState(0);
+
+  const handleClick = (action) => {
+    if (action === "back") {
+      if (index === 0) {
+        setIndex(Projects.length - 2);
+      } else {
+      setIndex(index - 1);
+      }
+    } else if (action === "forward") {
+      if (index === Projects.length - 1) {
+        setIndex(0);
+      } else {
+        setIndex(index + 1);
+      }
+    }
+  }
 
   return (
     <div id="home-page">
@@ -21,37 +45,45 @@ This website has been coded using React.js, Css, along with passion and love.</p
         {/* <ScrollDown name='learn more' value={window.innerHeight - document.getElementById('navbar').clientHeight}/> */}
         <ScrollDown name='learn more'/>
       </div>
-      {/* Part two = Green ingredient checker*/}
+
+      {/* Part two = Projects */}
       <div id='home-part-two'>
-        <div id='light-blue-gradient'></div>
+        <div id='projects' className='inline-flexbox'>
+          <button className='arrow-back' onClick={(e => handleClick("back"))}>
+            <span class="material-symbols-rounded">arrow_back_ios</span>
+          </button>
+          {Projects[index]["_comment"] ? handleClick('forward') : 
+          <ProjectOverview id={Projects[index]["id"]} description={Projects[index]["description"]} tech={Projects[index]["technos"]} mockupURL={Projects[index]["mockupURL"]} githubURL={Projects[index]["githubURL"]}/>
+          }
+          <button className='arrow-forward' onClick={(e => handleClick("forward"))}>
+            <span class="material-symbols-rounded">arrow_forward_ios</span>
+          </button>
+        </div>
+      </div>
+
+        {/* Part three = Timeline */}
+      <div id='home-part-timeline' className='eighty-vh-div'>
+        <Timeline/>
+      </div>
+
+        {/* Part four = Hire me ! */}
+      <div id='home-part-hireme' className='eighty-vh-div'>
+        {/* <div className='void'></div> */}
         <div className='inline-flexbox'>
-          <div className='text-ov-img-cont'>
-            <img className='rounded-image' src={oceanPicture} alt='Ocean waves'/>
-            <p className='centered-text h1-title'>GREEN?</p>
-          </div>
-          <div id='green-description'>
-            <p>Because I am passionate about ecology, reducing foot print by lowering the amount of waste and protecting our water systems, 
-            I created my own
-            <em> ingredient checker </em>
-            with a unique system of notation. </p>
-          </div>
-        </div>
-          <Link to="/green">Try it now!</Link>
-        </div>
-        {/* Part three = Hire me ! */}
-        <div id='home-part-three' className='eighty-vh-div'>
-          <div className='void'></div>
-          <div className='inline-flexbox'>
-            <div className='about'>
-              <p>My dream job would be for a company who share the same values about equity and sustainability. And the perfect 
-              team would be made of passionate, positive and outgoing people. I am actively looking for my first job, to learn more about my 
-              education and past experiences visit&nbsp;
-              <Link to='/resume' >my resume.</Link></p>
-              <em>I am looking forwart to meeting you soon!</em>
+          <div className='about'>
+            <p>My dream job would be for a company who shares the same values about equity and sustainability. And the perfect 
+            team would be made of passionate, positive and outgoing people.&nbsp;
+            {/* <Link to='/resume' >my resume.</Link> */}
+            </p>
+            <em>I am looking forwart to meeting you soon!</em>
+            <div className='contact-buttons'>
+              <button className='hireme-button border-buttons'>HIRE ME!</button>
+              <button className='resume-button border-buttons'>RESUME</button>
             </div>
-            <img className='portrait' src={portraitPicture} alt='portrait of me' />
           </div>
+          <img className='portrait' src={portraitPicture} alt='portrait of me' />
         </div>
+      </div>
     </div>
 );
 }
