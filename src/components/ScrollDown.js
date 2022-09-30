@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { BsChevronCompactDown } from "react-icons/bs";
 // import { Link } from 'react-router-dom';
 
 
-const ScrollDown = (props) => {
+const ScrollDown = () => {
 
   const [windowHeight, setWindowHeight] = useState(window.innerHeight);
 
@@ -27,7 +28,9 @@ const ScrollDown = (props) => {
   }
   
   return (
-      <button className='button-link' onClick={() => handleClick()}>{props.name}</button>
+      <button className='button-link' onClick={() => handleClick()}>
+        <BsChevronCompactDown className='chevron-down'/>
+      </button>
   )
 }
 
