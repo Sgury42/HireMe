@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Khmer MN";
+  src: local("Khmer MN"),
+   url("../fonts/Khmer-MN.ttc") format("truetype");
+  font-weight: courant;
+  }
+
+  /* my colors:  */
+
+/* dark teal: hsla(180, 75%, 22%, 1)
+light teal: hsla(173, 34%, 62%, 1)
+orange:hsla(30, 100%, 58%, 1)
+red: hsla(23, 100%, 43%, 1)
+text: hsla(0, 2%, 21%, 1) */
+
+
+/* NEW COLOR SET
+
+tan: rgb(166,111,81) //too light
+or tan: rgb(150,85,56)
+blush: rgb(239,211,200)
+light blush: rgba(239,211,200, 0.5)
+mauve: rgb(204,169,158) */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: whitesmoke;
+}
+
+
+/* Text */
+
+.underlined-highlight {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.h1-title {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* color: hsla(179, 92%, 38%, 1); */
+}
+
+.h2-title {
+  /* need to change font */
+  font-family: Khmer MN;
+  /* text-align: center; */
+  margin-left: 100px;
+  font-size: 3.5em;
+  line-height: 1;
+}
+
+.text-ov-img-cont {
+  position: relative;
+  height: fit-content;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 6px hsla(0, 2%, 21%, 1);
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  font-size: 4em;
+}
+
+/* div and containers */
+
+.void {
+  height: 5em;
+}
+
+.half-screen {
+  /* background-color: red; */
+  margin: auto;
+}
+
+/* .full-height-div {
+  height: 100vh;
+} */
+
+.eighty-vh-div {
+  height: 80vh;
+  min-height: fit-content;
+}
+
+.inline-flexbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* text-align: center; */
+  height: 100%;
+}
+
+.column-flexbox {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+/* icons */
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/* custom elements */
+
+.footer {
+  margin-bottom: 0;
+}
+
+#scroll-down-button {
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.button-link {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.button-link:hover {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+}

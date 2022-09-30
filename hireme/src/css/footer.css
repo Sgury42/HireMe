@@ -1,0 +1,30 @@
+#footer {
+  background-color: hsla(180, 75%, 22%, 1);
+  min-height: 10vh;
+  height: fit-content;
+  font-variant-caps: all-small-caps;
+  display: flex;
+  margin-top: auto;
+}
+
+.footer-title {
+  color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: 10px;
+  margin-bottom: 0;
+  bottom: 0;
+  font-size: 2em;
+  height: fit-content;
+}
+
+#footer ul {
+  font-size: 1em;
+}
+
+#footer ul li a {
+  color:rgb(255, 255, 255);
+}
+
+#footer li :hover {
+  text-decoration: underline;
+}
