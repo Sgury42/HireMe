@@ -5,6 +5,10 @@
 #home-page a {
   color: hsla(0, 2%, 21%, 1);
   text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
 
 
@@ -17,16 +21,6 @@
 /* #home-wrapper {
   display: flex;
   flex-direction: row-reverse;
-} */
-
-/* #vertical-navbar {
-  width: 30%;
-  height: 50vh;
-  border: 1px solid grey;
-  top: 100px;
-  right: 40px;
-  position: fixed;
-  z-index: 9;
 } */
 
 #home-part-one {
@@ -68,9 +62,9 @@
 
 /* Part two => Green ingredient checker */
 
-#home-part-two {
-  min-height: fit-content;
-  height: 90vh;
+#home-part-projects {
+  min-height: 90vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   background: linear-gradient(180deg, hsla(187, 48%, 79%, 1) 0%, whitesmoke 25%);
@@ -78,23 +72,11 @@
   /* overflow-y: scroll; */
 }
 
-#home-part-two .text-ov-img-cont {
+#home-part-projects .text-ov-img-cont {
   margin-left: 4em;
 }
 
-.rounded-image {
-  border-radius: 50%;
-  width: 15em;
-  height: 15em;
-  margin: auto;
-}
-
-#green-description {
-  margin: 5em;
-  text-align: center;
-}
-
-#home-part-two a {
+#home-part-projects a {
   margin: auto;
 }
 
@@ -102,7 +84,9 @@
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  position: relative;
+  /* position: relative; */
+  /* height: fit-content; */
+  min-height: 90vh;
   /* overflow-y: scroll; */
   /* min-width: 1400px; */
 }

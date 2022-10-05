@@ -5,6 +5,7 @@
   font-variant-caps: all-small-caps;
   display: flex;
   margin-top: auto;
+  margin-bottom: -100px;
 }
 
 .footer-title {

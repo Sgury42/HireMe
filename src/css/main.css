@@ -79,9 +79,9 @@ mauve: rgb(204,169,158) */
   margin: auto;
 }
 
-/* .full-height-div {
+.full-height-div {
   height: 100vh;
-} */
+}
 
 .eighty-vh-div {
   height: 80vh;

@@ -1,20 +1,93 @@
 #vertical-navbar {
   width: 30%;
   height: 50vh;
-  border: 1px solid grey;
   top: 100px;
   right: 40px;
   position: fixed;
-  z-index: 9;
+  z-index: 1;
   display: flex;
   flex-direction: row-reverse;
 }
 
-.line {
+.bar {
   height: 100%;
-  width: 10px;
-  background-color: grey;
-  /* justify-self: flex-end; */
-  /* left: 0; */
-  /* margin-right: auto; */
+  width: 2px;
+  background-color: hsla(180, 75%, 22%, 1);
+}
+
+.bar-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 101%;
+}
+
+.bar-item {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.bar-circle::before {
+	content: '';
+	width: 14px;
+	height: 14px;
+	background-color: hsla(187, 48%, 79%, 1);
+	display: block;
+  border-radius: 100%;
+  border: 2px solid hsla(180, 75%, 22%, 1);
+  transform: translateX(7px);
+  /* z-index: 2; */
+}
+
+.bar-circle:hover::before {
+  background-color: hsla(180, 75%, 22%, 1);
+  /* z-index: 2; */
+}
+
+.bar-circle:hover + .bar-content{
+  /* display: block; */
+  opacity: 100%;
+  -webkit-animation: myfirst 1;
+  animation: myfirst 1;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  animation-direction: normal;
+  -webkit-animation-direction: normal;
+  /* mix-blend-mode: difference; */
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    margin-right: -20px;
+  }
+  100% {
+      margin-right: 5px;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+      margin-right: -20px;
+  }
+  100% {
+      margin-right: 5px;
+  }
+}
+
+.bar-content {
+	width: fit-content;
+  font-size: medium;
+  min-width: 100px;
+  text-align: center;
+  opacity: 0%;
+  transition: 0.2s;
+  z-index: -1;
+  margin-right: 5px;
+  color: black;
+  mix-blend-mode: difference;
+  padding: 0;
+  border-radius: 10px;
+  background-color: rgba(245, 245, 245, 0.7);
+  box-shadow: 0px 0px  10px 10px rgba(245, 245, 245, 0.7);
+  /* text-shadow: 0 0 5px whitesmoke; */
 }

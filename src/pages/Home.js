@@ -42,27 +42,30 @@ This website has been coded using React.js, Css, along with passion and love.</p
       </div>
       {/* Part two = Projects */}
         <VerticalNavbar />
-        <div id='home-part-two'>
+        <div id='home-part-projects'>
+          {/* <div className='void'></div> */}
           <div id='projects' className='inline-flexbox'>
             <button className='arrow-back' onClick={(e => handleClick("back"))}>
-              <span class="material-symbols-rounded">arrow_back_ios</span>
+              <span className="material-symbols-rounded">arrow_back_ios</span>
             </button>
             {Projects[index]["_comment"] ? handleClick('forward') : 
             <ProjectOverview id={Projects[index]["id"]} description={Projects[index]["description"]} tech={Projects[index]["technos"]} mockupURL={Projects[index]["mockupURL"]} githubURL={Projects[index]["githubURL"]}/>
             }
             <button className='arrow-forward' onClick={(e => handleClick("forward"))}>
-              <span class="material-symbols-rounded">arrow_forward_ios</span>
+              <span className="material-symbols-rounded">arrow_forward_ios</span>
             </button>
           </div>
         </div>
 
           {/* Part three = Timeline */}
         <div id='home-part-timeline' className='eighty-vh-div'>
+          {/* <div className='void'></div> */}
           <Timeline/>
         </div>
 
           {/* Part four = Hire me ! */}
-        <div id='home-part-hireme' className='eighty-vh-div'>
+        <div id='home-part-hireme' className='full-height-div'>
+          {/* <div className='void'></div> */}
           {/* <div className='void'></div> */}
           <div className='inline-flexbox'>
             <div className='about'>
