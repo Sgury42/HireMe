@@ -47,8 +47,8 @@
 .bar-circle:hover + .bar-content{
   /* display: block; */
   opacity: 100%;
-  -webkit-animation: myfirst 1;
-  animation: myfirst 1;
+  -webkit-animation: item-slide 1;
+  animation: item-slide 1;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
   animation-direction: normal;
@@ -56,7 +56,7 @@
   /* mix-blend-mode: difference; */
 }
 
-@-webkit-keyframes myfirst {
+@-webkit-keyframes item-slide {
   0% {
     margin-right: -20px;
   }
@@ -65,7 +65,7 @@
   }
 }
 
-@keyframes myfirst {
+@keyframes item-slide {
   0% {
       margin-right: -20px;
   }

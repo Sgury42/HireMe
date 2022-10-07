@@ -1,5 +1,4 @@
 export { default as Home } from './Home';
-export { default as Green } from './Green';
 export { default as Hireme } from './Hireme';
 export { default as Resume } from './Resume';
 export { default as Projects } from './Projects';

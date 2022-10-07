@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import '../css/projects.css';
 import Projects from '../json/projects.json';
-import { ProjectOverview } from '../components/index.js';
+import { ProjectGallery } from '../components/index.js';
 
 const ProjectsPage = () =>{
 
@@ -25,14 +26,14 @@ const ProjectsPage = () =>{
 
   return (
     <div id='projects' className='inline-flexbox'>
-        <button className='arrow-back' onClick={(e => handleClick("back"))}>
-          <span className="material-symbols-rounded">arrow_back_ios</span>
+        <button className='arrow-back chevron' onClick={(e => handleClick("back"))}>
+          <BsChevronCompactLeft />
         </button>
         {Projects[index]["_comment"] ? handleClick('forward') : 
-        <ProjectOverview id={Projects[index]["id"]} description={Projects[index]["description"]} tech={Projects[index]["technos"]} mockupURL={Projects[index]["mockupURL"]} githubURL={Projects[index]["githubURL"]}/>
+        <ProjectGallery id={Projects[index]["id"]} description={Projects[index]["description"]} tech={Projects[index]["technos"]} mockupURL={Projects[index]["mockupURL"]} githubURL={Projects[index]["githubURL"]} liveURL={Projects[index]["liveURL"]}/>
         }
-        <button className='arrow-forward' onClick={(e => handleClick("forward"))}>
-          <span className="material-symbols-rounded">arrow_forward_ios</span>
+        <button className='arrow-forward chevron' onClick={(e => handleClick("forward"))}>
+          <BsChevronCompactRight />
         </button>
 
 

@@ -36,7 +36,80 @@
 
 .welcome-msg {
   flex-grow: 1;
+  /* line-height: 0.5em; */
 }
+
+.welcome-msg h2 {
+  line-height: 0.2em;
+}
+
+.welcome-msg .hi {
+  -webkit-animation: text-right-to-left 1;
+  animation: text-right-to-left 1;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  animation-direction: normal;
+  -webkit-animation-direction: normal;
+}
+
+.welcome-msg .my-name-is {
+  -webkit-animation: text-right-to-left-delayed 1;
+  animation: text-right-to-left-delayed 1;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  animation-direction: normal;
+  -webkit-animation-direction: normal;
+}
+
+@-webkit-keyframes text-right-to-left {
+  0% {
+    opacity: 0%;
+    margin-left: 50%;
+  }
+  100% {
+      opacity: 100%;
+  }
+}
+
+@keyframes text-right-to-left {
+  0% {
+    opacity: 0%;
+    margin-left: 50%;
+  }
+  100% {
+      opacity: 100%;
+  }
+}
+
+@-webkit-keyframes text-right-to-left-delayed {
+  0% {
+    opacity: 0%;
+    margin-left: 50%;
+  }
+  25% {
+    opacity: 0%;
+    margin-left: 50%;
+  }
+  100% {
+      opacity: 100%;
+  }
+}
+
+@keyframes text-right-to-left-delayed {
+  0% {
+    opacity: 0%;
+    margin-left: 50%;
+  }
+  25% {
+    opacity: 0%;
+    margin-left: 50%;
+  }
+  100% {
+      opacity: 100%;
+  }
+}
+
+
 
 .introduction {
   width: 75%;
@@ -81,14 +154,7 @@
 }
 
 #home-part-timeline {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* position: relative; */
-  /* height: fit-content; */
   min-height: 90vh;
-  /* overflow-y: scroll; */
-  /* min-width: 1400px; */
 }
 
 

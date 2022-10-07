@@ -4,7 +4,7 @@
   width: 100%;
 }
 
-.ProjectOverview {
+.ProjectGallery {
   width: 100%;
   /* height: 50vh; */
 }
@@ -54,27 +54,21 @@
   /* justify-content: center; */
 }
 
-.project-right-part img {
-  /* margin: auto; */
+#projects .chevron {
+  font-size: 2em;
 }
 
+/* #projects .chevron:hover {
+  font-size: 2.3em;
+} */
 
-
-#projects .material-symbols-rounded {
-  font-size: 5vh;
-  padding: 5px;
+.project-left-part .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-#projects .arrow-back {
-  margin-right: auto;
-}
-
-
-#projects .arrow-forward {
-  margin-left: auto;
-}
-
-.github-link {
+.project-link {
   margin: auto;
   display: flex;
   cursor: pointer;
@@ -82,12 +76,14 @@
   padding: 13px 20px 13px;
   border: 1px solid rgba(0, 0, 0, 0.5);
   position: relative;
+  height: 5em;
+  min-height: fit-content;
   /* user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation; */
 }
 
-.github-link:after {
+.project-link:after {
   content: "";
   border: 1px solid hsla(180, 75%, 22%, 1);
   width: 100%;
@@ -98,56 +94,39 @@
   transition: 0.2s;
 }
 
-.github-link:hover:after {
+.project-link:hover:after {
   top: 0px;
   left: 0px;
   background-color: rgba(175,221,227, 0.5);
   box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.1);
 }
 
-.github-link:hover {
+.project-link:hover {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.github-link:active:after {
+.project-link:active:after {
   background-color: rgba(175,221,227, 0.7);
   box-shadow: none;
 }
 
-.github-link p {
+.project-link p {
   padding-left: 15px;
-  size: 2em;
+  size: 1.5em;
   z-index: 1;
 }
 
-#projects .github-icon {
-  height: 50px;
-  opacity: 85%;
+.project-left-part .github-icon {
+  color: hsl(0, 2%, 21%);
+  font-size: 3em;
   z-index: 1;
 }
 
-#projects .technos {
+.project-right-part .technos {
   display: flex;
   justify-content: space-around;
   height: 100px;
 }
-
-/* .tech1 {
-  align-self: flex-start;
-}
-
-.tech2 {
-  align-self: flex-end;
-}
-
-.tech3 {
-  align-self: center;
-} */
-
-/* @keyframes appear {
-  from {opacity: 0%;}
-  to {opacity: 100%;}
-} */
 
 .project-right-part p {
   /* align-self: flex-end; */
@@ -161,29 +140,9 @@
   /* opacity: 0%; */
 }
 
-/* .project-right-part .tech1 {
-  animation-name: appear;
-  animation-duration: 1s;
-}
 
-.project-right-part .tech2 {
-  animation-name: appear;
-  animation-duration: 2s;
+#projects-scroll-through {
+  height: 100vh;
+  /* flex-direction: row-reverse; */
+  margin: 50px;
 }
-.project-right-part .tech3 {
-  animation-name: appear;
-  animation-duration: 3s;
-}
-.project-right-part .tech4 {
-  animation-name: appear;
-  animation-duration: 4s;
-}
-.project-right-part .tech5 {
-  animation-name: appear;
-  animation-duration: 5s;
-}
-.project-right-part .tech6 {
-  animation-name: appear;
-  animation-duration: 6s;
-  animation-delay: 3s;
-} */

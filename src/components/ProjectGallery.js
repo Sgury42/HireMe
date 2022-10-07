@@ -1,9 +1,10 @@
 import React from 'react';
 import '../css/projects.css';
+import { BsGithub } from 'react-icons/bs'
 // import { Link } from 'react-router-dom';
 
 
-const ProjectOverview = (props) => { //id, description, tech, mockupURL, githubURL
+const ProjectGallery = (props) => { //id, description, tech, mockupURL, githubURL
 
   // const techStyle = {
   //   setTimeout(() => opacity: '0%', 2000)
@@ -17,7 +18,7 @@ const ProjectOverview = (props) => { //id, description, tech, mockupURL, githubU
   };
 
   return (
-    <div id="ProjectOverview" className='inline-flexbox'>
+    <div id="ProjectGallery" className='inline-flexbox'>
       <div className='column-flexbox project-left-part'>
         <div id='project-description' className='half-screen'>
         <div className='project-details'>
@@ -27,10 +28,16 @@ const ProjectOverview = (props) => { //id, description, tech, mockupURL, githubU
         </div>
         <p>{props.description.descriptionPartOne}<b>{props.description.descriptionHighlight}</b>{props.description.descriptionPartTwo}</p>
         </div>
-          <button className='github-link' onClick={()=>openInNewTab(props.githubURL)} >
-            <img className='github-icon' src='/assets/GitHub-Mark-120px-plus.png' alt='visit github page'/>
+        <div className='buttons'>
+          <button className='project-link' onClick={()=>openInNewTab(props.githubURL)} >
+            <BsGithub className='github-icon'/>
             <p>VISIT GITHUB PAGE</p>
           </button>
+          {props.liveURL ? 
+          <button className="project-link" onClick={()=>openInNewTab(props.liveURL)}>
+            <p>VISIT LIVE SITE</p>
+          </button> : null}
+        </div>
       </div>
       <div className='project-right-part'>
         <div className='technos'>
@@ -52,4 +59,4 @@ const ProjectOverview = (props) => { //id, description, tech, mockupURL, githubU
   )
 }
 
-export default ProjectOverview;
+export default ProjectGallery;
