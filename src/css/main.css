@@ -13,15 +13,6 @@ orange:hsla(30, 100%, 58%, 1)
 red: hsla(23, 100%, 43%, 1)
 text: hsla(0, 2%, 21%, 1) */
 
-
-/* NEW COLOR SET
-
-tan: rgb(166,111,81) //too light
-or tan: rgb(150,85,56)
-blush: rgb(239,211,200)
-light blush: rgba(239,211,200, 0.5)
-mauve: rgb(204,169,158) */
-
 .app {
   display: flex;
   flex-direction: column;
@@ -39,13 +30,10 @@ mauve: rgb(204,169,158) */
 
 .h1-title {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  /* color: hsla(179, 92%, 38%, 1); */
 }
 
 .h2-title {
-  /* need to change font */
   font-family: Khmer MN;
-  /* text-align: center; */
   margin-left: 100px;
   font-size: 3.5em;
   line-height: 1;
@@ -75,7 +63,6 @@ mauve: rgb(204,169,158) */
 }
 
 .half-screen {
-  /* background-color: red; */
   margin: auto;
 }
 
@@ -92,14 +79,12 @@ mauve: rgb(204,169,158) */
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* text-align: center; */
   height: 100%;
 }
 
 .column-flexbox {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 /* icons */

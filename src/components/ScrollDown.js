@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { BsChevronCompactDown } from "react-icons/bs";
-// import { Link } from 'react-router-dom';
 
 
 const ScrollDown = () => {

@@ -36,16 +36,13 @@
   border-radius: 100%;
   border: 2px solid hsla(180, 75%, 22%, 1);
   transform: translateX(7px);
-  /* z-index: 2; */
 }
 
 .bar-circle:hover::before {
   background-color: hsla(180, 75%, 22%, 1);
-  /* z-index: 2; */
 }
 
 .bar-circle:hover + .bar-content{
-  /* display: block; */
   opacity: 100%;
   -webkit-animation: item-slide 1;
   animation: item-slide 1;
@@ -53,7 +50,6 @@
   animation-duration: 2s;
   animation-direction: normal;
   -webkit-animation-direction: normal;
-  /* mix-blend-mode: difference; */
 }
 
 @-webkit-keyframes item-slide {
@@ -89,5 +85,4 @@
   border-radius: 10px;
   background-color: rgba(245, 245, 245, 0.7);
   box-shadow: 0px 0px  10px 10px rgba(245, 245, 245, 0.7);
-  /* text-shadow: 0 0 5px whitesmoke; */
 }

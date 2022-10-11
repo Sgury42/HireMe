@@ -6,15 +6,7 @@
 
 .ProjectGallery {
   width: 100%;
-  /* height: 50vh; */
 }
-
-/* .link-box {
-  background-color: red;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-} */
 
 .mockup {
   height: 45vh;
@@ -25,8 +17,6 @@
 
 #project-description {
   font-size: medium;
-  /* display: flex; */
-  /* flex-direction: column; */
 }
 
 .project-details {
@@ -45,22 +35,12 @@
 }
 
 .project-right-part {
-  /* margin: auto; */
   width: 60%;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* align-content: center; */
-  /* justify-content: center; */
 }
 
 #projects .chevron {
   font-size: 2em;
 }
-
-/* #projects .chevron:hover {
-  font-size: 2.3em;
-} */
 
 .project-left-part .buttons {
   display: flex;
@@ -78,9 +58,6 @@
   position: relative;
   height: 5em;
   min-height: fit-content;
-  /* user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation; */
 }
 
 .project-link:after {
@@ -129,20 +106,15 @@
 }
 
 .project-right-part p {
-  /* align-self: flex-end; */
   color: white;
   border-radius: 30px;
   height: fit-content;
   width: fit-content;
   padding: 3px 10px 3px;
-  /* animation-name: appear;
-  animation-duration: 2s; */
-  /* opacity: 0%; */
 }
 
 
 #projects-scroll-through {
   height: 100vh;
-  /* flex-direction: row-reverse; */
   margin: 50px;
 }

@@ -10,8 +10,6 @@ const ProjectsScrollThrough = (props) => {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
-  // console.log(props.datas[0].tech[0]);
-
   return (
     <div>
       {props.datas.map((project, index) => (

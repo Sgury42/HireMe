@@ -1,15 +1,9 @@
 import React from 'react';
 import '../css/projects.css';
 import { BsGithub } from 'react-icons/bs'
-// import { Link } from 'react-router-dom';
 
 
 const ProjectGallery = (props) => { //id, description, tech, mockupURL, githubURL
-
-  // const techStyle = {
-  //   setTimeout(() => opacity: '0%', 2000)
-  //   opacity: '50%',
-  // };
 
   const colors = ['#6ea0a1', '#3d8181', '#257172', '#0c5758', '#0a4e4e', '#094445'];
 
