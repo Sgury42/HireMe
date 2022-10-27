@@ -16,8 +16,8 @@ const Home = () =>{
         <div className='void'></div>
         <div className='welcome-msg'>
           <h2 className='h2-title'><p className="hi">Hi!</p><p className="my-name-is">I am Sandra,</p></h2>
-          <p className='introduction'><span className='underlined-highlight'>full stack web developper</span>, actively looking for my first job!
-This website has been coded using React.js, Css, along with passion and love.</p>
+          <p className='introduction'><span className='underlined-highlight'>junior web developper</span>, actively looking for a company to devote my coding skills to.
+This website has been coded using React.js, Css, HTML, node, along with passion and love. Take a scroll and discover more projects I had the opportunity to work on.</p>
         </div>
         <ScrollDown/>
       </div>
