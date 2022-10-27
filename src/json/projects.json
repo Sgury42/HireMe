@@ -3,7 +3,7 @@
     "id": "Wandernder Flecken",
     "description": {"type": "freelance", "teamSize": "me", "duration": "1month", "descriptionPartOne": "This is a portfolio for a researcher to post all his articles in one place. The main focus was ", "descriptionHighlight": "accessibility and simplicity.", "descriptionPartTwo": ""},
     "technos": ["Javascript", "CSS", "JSON", "HTML", "React", "Node"],
-    "mockupURL": "mockups/WandernderFleckenMockup.png",
+    "mockupURL": "mockups/WandernderFleckenMockup.webp",
     "githubURL": "https://github.com/Sgury42/Sgury42.github.io",
     "liveURL": "https://www.fmuirhead.info/"
   },
@@ -11,21 +11,21 @@
     "id" : "Hypertube",
     "description": {"type": "School project", "teamSize": "2 other classmate + me", "duration": "4 months", "descriptionPartOne": "Hypertube is a ", "descriptionHighlight": "streaming plateform, \"Netflix like\" ", "descriptionPartTwo": ", using torrent sources to live stream movies directly to the user, movies can be looked up by genres, year of release and keywords. The streaming might not be as good as Netflix but comments are allowed and it was really cool to recreate something similar. This last school project allowed me sumarized what I learned so far about website developing and of course learn more, because learning never stops in this field and it is part of why I love it so much."},
     "technos": ["React", "Bootstrap", "Express", "Google Auth", "MongoDB", "Javascript"],
-    "mockupURL": "mockups/HypertubeMockup.png",
+    "mockupURL": "mockups/HypertubeMockup.webp",
     "githubURL": "https://github.com/Sgury42/Hypertube"
   },
   {
     "id" : "Matcha",
     "description": {"type": "School project", "teamSize": "another classmate + me", "duration": "2 months", "descriptionPartOne": "Matcha is a ", "descriptionHighlight": "match making web application", "descriptionPartTwo":" featuring a smart profile suggestion based on location, popularity score and interest. Users can choose to receive notification when a new match happen and/or when they receive a new message through the chat. It got everything you need to find true love! It was fun to work on and to use react for the first time."},
     "technos": ["Javascript", "React", "Hooks & Redux", "Sockets", "Materia-UI", "Google Geolocation"],
-    "mockupURL": "mockups/MatchaMockup.png",
+    "mockupURL": "mockups/MatchaMockup.webp",
     "githubURL": "https://github.com/Sgury42/matcha"
   },
   {
     "id" : "Camagru",
     "description": {"type": "School project", "teamSize": "just me!", "duration": "1 month", "descriptionPartOne": "Camagru was the first ever web project I worked on, it is an ", "descriptionHighlight": "\"instagram like\" website.", "descriptionPartTwo": " It features a screen to take a selfie with a few filters, an user page where you can see all the photos you've published and can choose to share them or keep them private, a feed page where you can see other users photos, like them and leave a comment. And also the option to opt in for email notifications!"},
     "technos": ["PHP", "Javascript", "MySql", "HTML", "CSS", "GIT"],
-    "mockupURL": "mockups/CamagruMockup.png",
+    "mockupURL": "mockups/CamagruMockup.webp",
     "githubURL": "https://github.com/Sgury42/Camagru"
   },
   {

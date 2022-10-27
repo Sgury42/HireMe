@@ -3,7 +3,7 @@ import '../css/home.css';
 import '../css/main.css';
 import Projects from '../json/projects.json';
 import { Timeline, ScrollDown, VerticalNavbar, ProjectsScrollThrough } from '../components/index.js';
-import portraitPicture from '../assets/images/portrait-2.jpg';
+import portraitPicture from '../assets/images/portrait-2.webp';
 import resume from '../assets/SandraMcDanielsResume.pdf';
 
 

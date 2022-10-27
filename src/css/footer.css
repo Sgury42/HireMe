@@ -4,15 +4,14 @@
   height: fit-content;
   font-variant-caps: all-small-caps;
   display: flex;
+  flex-direction: column;
   margin-top: auto;
   margin-bottom: -100px;
 }
 
 .footer-title {
-  color: rgb(255, 255, 255);
-  margin-left: auto;
-  margin-right: 10px;
-  margin-bottom: 0;
+  color: whitesmoke;
+  margin: 0 10px 0 auto;
   bottom: 0;
   font-size: 2em;
   height: fit-content;
@@ -28,4 +27,19 @@
 
 #footer li :hover {
   text-decoration: underline;
+}
+
+#footer #social-links {
+  margin: auto;
+}
+
+#footer .social-icon {
+  height: 35px;
+  width: 35px;
+  margin: 5px;
+  color: whitesmoke;
+}
+
+#footer .social-icon:visited {
+  color: initial;
 }

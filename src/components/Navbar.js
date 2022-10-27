@@ -12,7 +12,7 @@ const Navbar = () => {
   })
 
   function changeBackground() {
-    if (window.scrollY > 40) {
+    if (window.scrollY > 100) {
       setActive(true);
     } else {
       setActive(false);
